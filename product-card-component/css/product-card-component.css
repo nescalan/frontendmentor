@@ -2,6 +2,7 @@
   /* ### Primary */
 
   --DarkCyan: hsl(158, 36%, 37%);
+  --VeryDarkCyan: hsl(158, 36%, 24%);
   --Cream: hsl(30, 38%, 92%);
 
   /* ### Neutral */
@@ -126,6 +127,10 @@ button {
   border: none;
   border-radius: 10px;
   background-color: var(--DarkCyan);
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--VeryDarkCyan);
 }
 button .svg {
   width: 24px;

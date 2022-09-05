@@ -5,14 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontendmentor</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Cabin:wght@400;600;700&family=Martel+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <ul>
-      <li>
-        <a href="./product-card-component/product-card-component.html"
-          >Product card Component</a
-        >
-      </li>
-    </ul>
+    <header class="header container">
+      <div class="logo-container">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+            <path
+              d="M5.8 36.35v-3.4h36.4v3.4Zm0-10.65v-3.4h36.4v3.4Zm0-10.65v-3.4h36.4v3.4Z"
+            />
+          </svg>
+        </div>
+        <div class="logo-mobile">
+          <img
+            src="./img/nelson-logo-375px.png"
+            alt="nelson logo for desktop devices"
+          />
+          <span>Nelson Gonzalez</span>
+        </div>
+        <div class="logo-desktop">
+          <img
+            src="./img/nelson-logo-768px.png"
+            alt="nelson logo for desktop devices"
+          />
+        </div>
+      </div>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Pages</a></li>
+      </ul>
+    </header>
+    <main class="main">
+      <section class="hero container">
+        <span class="hero-title">
+          Ing. Nelson González Escalante - Frontend Developer, Based in Costa
+          Rica
+        </span>
+      </section>
+      <ul>
+        <li>
+          <a href="./product-card-component/product-card-component.html"
+            >Product Card Component</a
+          >
+        </li>
+      </ul>
+    </main>
   </body>
 </html>

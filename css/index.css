@@ -1,0 +1,59 @@
+:root {
+  /* Colors */
+  --primaryBG: #6e6e6e;
+  --hover-font: #fa4529;
+
+  /* Fonts */
+  --arimo-ff: "Arimo", sans-serif;
+  --cabin-ff: "Cabin", sans-serif;
+  --martelSans-ff: "Martel Sans", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--martelSans-ff);
+}
+/* GENERAL */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid orangered;
+}
+
+/* HEADER */
+.header .logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid green;
+}
+.header .logo-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .logo-mobile img {
+  width: 60%;
+}
+.header .logo-mobile span {
+  margin-top: 10px;
+  font-family: var(--arimo-ff);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.header .logo-desktop {
+  display: none;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+}

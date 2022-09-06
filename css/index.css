@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --primaryBG: #6e6e6e;
+  --primaryBG: hsl(0, 0%, 43%);
   --blueBG: #3e54a3;
   --hover-font: #fa4529;
 
@@ -24,12 +24,15 @@ body {
 
 /* GENERAL */
 .container {
-  width: 100%;
   min-width: 375px;
   margin: 0 auto;
   border: 1px solid orangered;
 }
-
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
 /* HEADER */
 .header .logo-container {
   width: 100%;
@@ -38,10 +41,11 @@ body {
   align-items: center;
   border: 2px solid green;
 }
-.header .logo-mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+@media (min-width: 992px) {
+  .header .logo-container label {
+    display: none;
+  }
 }
 .header #btn-menu {
   display: none;
@@ -49,17 +53,34 @@ body {
 .header #btn-menu:checked ~ .navbar {
   margin-left: -6%;
 }
+.header .logo-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header .logo-mobile img {
   width: 50%;
 }
 .header .logo-mobile span {
   margin-top: 10px;
+  color: var(--blueBG);
   font-family: var(--arimo-ff);
   font-weight: 800;
   text-transform: uppercase;
 }
+@media (min-width: 992px) {
+  .header .logo-mobile {
+    display: none;
+  }
+}
 .header .logo-desktop {
   display: none;
+}
+@media (min-width: 992px) {
+  .header .logo-desktop {
+    display: block;
+  }
 }
 
 /* NAVBAR */
@@ -77,6 +98,15 @@ body {
   transition: 300ms;
   background-color: var(--blueBG);
 }
+
+@media (min-width: 992px) {
+  .navbar {
+    width: 50%;
+    flex-direction: row;
+    position: static;
+    background-color: #fff;
+  }
+}
 .navbar a {
   color: white;
   font-family: var(--cabin-ff);
@@ -84,4 +114,9 @@ body {
   font-size: 2.5rem;
   text-align: center;
   text-decoration: none;
+}
+@media (min-width: 992px) {
+  .navbar a {
+    color: #3e54a3;
+  }
 }

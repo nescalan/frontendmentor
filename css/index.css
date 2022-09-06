@@ -1,8 +1,8 @@
 :root {
   /* Colors */
   --primaryBG: #6e6e6e;
-  --hover-font: #fa4529;
   --blueBG: #3e54a3;
+  --hover-font: #fa4529;
 
   /* Fonts */
   --arimo-ff: "Arimo", sans-serif;
@@ -74,7 +74,7 @@ body {
   align-items: center;
   position: absolute;
   top: 110px;
-  transition: 700ms;
+  transition: 300ms;
   background-color: var(--blueBG);
 }
 .navbar a {

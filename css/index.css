@@ -21,9 +21,10 @@ body {
   font-size: 1.6rem;
   font-family: var(--martelSans-ff);
 }
+
 /* GENERAL */
 .container {
-  width: 90%;
+  width: 100%;
   min-width: 375px;
   margin: 0 auto;
   border: 1px solid orangered;
@@ -43,10 +44,10 @@ body {
   align-items: center;
 }
 .header #btn-menu {
-  /* display: none; */
+  display: none;
 }
-.header #btn-menu:checked ~ nav {
-  margin-left: 0;
+.header #btn-menu:checked ~ .navbar {
+  margin-left: -6%;
 }
 .header .logo-mobile img {
   width: 50%;
@@ -62,19 +63,18 @@ body {
 }
 
 /* NAVBAR */
-nav {
-  margin-left: -110%;
-}
 .navbar {
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 75%;
+  margin-left: -111%;
   padding-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  transition: 500ms;
+  top: 110px;
+  transition: 700ms;
   background-color: var(--blueBG);
 }
 .navbar a {
@@ -83,4 +83,5 @@ nav {
   font-weight: 600;
   font-size: 2.5rem;
   text-align: center;
+  text-decoration: none;
 }

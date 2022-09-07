@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --primaryBG: hsl(0, 0%, 43%);
+  --primaryBG: #dedede;
   --blueBG: #3e54a3;
   --hover-font: #fa4529;
 
@@ -25,19 +25,16 @@ body {
 
 /* GENERAL */
 .container {
+  width: 90%;
   min-width: 375px;
   margin: 0 auto;
 }
 @media (min-width: 576px) {
   .container {
-    width: 90%;
-  }
-}
-@media (min-width: 992px) {
-  .container {
     width: 80%;
   }
 }
+
 /* HEADER */
 .header .logo-container {
   width: 100%;
@@ -161,8 +158,8 @@ body {
 }
 .hero img {
   width: 40%;
-  margin-top: 3rem;
-  border-radius: 500px;
+  margin-top: 5rem;
+  border-radius: 100%;
 }
 @media (min-width: 576px) {
   .hero img {
@@ -185,17 +182,35 @@ body {
   }
 }
 
-/* Projects Section */
-.projects {
-  margin-top: 30px;
+/* Practice Section */
+#practice {
+  margin-top: 6rem;
+  padding: 3rem;
+  text-align: center;
+  background-color: var(--primaryBG);
+  border: 1px solid white;
 }
-.projects a {
-  text-indent: 1rem;
-  background-color: #ccc;
-  display: inline-flex;
-  flex: 1 1 20%;
-  align-self: stretch;
+#practice > p {
+  font-family: var(--cabin-ff);
+  font-size: 4rem;
+}
+.card {
+  margin-top: 3rem;
+  height: 300px;
+}
+.card img {
+  width: 100%;
+}
+/* FLEXBOX - WRAPPER */
+.flex-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  text-decoration: none;
-  transition: box-shadow 1s;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+.flex-wrapper .projects {
+  flex: 1 1 375px;
+  border: 1px solid green;
 }

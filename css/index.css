@@ -6,6 +6,7 @@
 
   /* Fonts */
   --arimo-ff: "Arimo", sans-serif;
+  --amiri-ff: "Amiri", serif;
   --cabin-ff: "Cabin", sans-serif;
   --martelSans-ff: "Martel Sans", sans-serif;
 }
@@ -135,33 +136,27 @@ body {
 }
 
 .hero-title {
+  max-width: 600px;
   margin-top: 6rem;
   display: block;
-  font-family: var(--martelSans-ff);
-  font-size: 4rem;
+  font-family: var(--amiri-ff);
+  font-size: 4.5rem;
   line-height: 6rem;
   text-align: center;
   letter-spacing: -0.04rem;
 }
 @media (min-width: 576px) {
   .hero-title {
-    font-size: 4.6rem;
+    font-size: 5rem;
     letter-spacing: 0.04rem;
   }
 }
 @media (min-width: 768px) {
   .hero-title {
     margin-top: 3rem;
-    font-size: 6rem;
+    font-size: 6.5rem;
     line-height: 8rem;
-    letter-spacing: 0.04rem;
-  }
-}
-@media (min-width: 1200px) {
-  .hero-title {
-    max-width: 1000px;
-    font-size: 8rem;
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.06rem;
   }
 }
 .hero img {
@@ -191,6 +186,9 @@ body {
 }
 
 /* Projects Section */
+.projects {
+  margin-top: 30px;
+}
 .projects a {
   text-indent: 1rem;
   background-color: #ccc;

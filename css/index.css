@@ -194,13 +194,14 @@ body {
 }
 
 /* Practice Section */
-#practice {
+#practicas {
   margin-top: 6rem;
   padding: 3rem 0;
   text-align: center;
   background-color: var(--secondaryBG);
 }
-#practice > p {
+#practicas,
+#ejercicios > p {
   font-family: var(--title-1);
   font-size: 4rem;
 }
@@ -219,17 +220,17 @@ body {
 }
 @media (min-width: 768px) {
   .card {
-    flex: 0.2 1 300px;
+    flex: 0.2 1 30rem;
   }
 }
 @media (min-width: 992px) {
   .card {
-    flex: 0.3 1 375px;
+    flex: 0.3 1 37.5rem;
   }
 }
 @media (min-width: 1200px) {
   .card {
-    flex: 0.45 1 375px;
+    flex: 0.45 1 37.5rem;
   }
 }
 .card img {
@@ -237,7 +238,7 @@ body {
   border-radius: 1rem 1rem 0 0;
 }
 .card .text {
-  margin: 2rem;
+  margin: 0 2rem 1rem 2rem;
 }
 .card .text span {
   font-family: var(--title-2);
@@ -251,6 +252,12 @@ body {
   text-align: justify;
 }
 
+/* Ejercicios en Clase */
+#ejercicios {
+  margin-top: 6rem;
+  padding: 3rem 0;
+  text-align: center;
+}
 /* FLEXBOX - WRAPPER */
 .flex-wrapper {
   display: flex;

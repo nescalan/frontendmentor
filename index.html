@@ -4,173 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontendmentor</title>
+    <title>Frontendmentor - Projects</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Cabin:wght@400;600;700&family=Martel+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Martel:wght@600;700&family=Yantramanav:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header class="header container">
-      <div class="logo-container">
-        <input id="btn-menu" type="checkbox" name="menu" />
-        <label for="btn-menu">
-          <img src="./img/menu.svg" alt="" />
+    <header>
+      <div class="btnmenu">
+        <input id="check" type="checkbox" />
+        <label for="check">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            width="48"
+            fill="#f1faee"
+          >
+            <path
+              d="M5.8 36.35v-3.4h36.4v3.4Zm0-10.65v-3.4h36.4v3.4Zm0-10.65v-3.4h36.4v3.4Z"
+            />
+          </svg>
         </label>
-        <div class="logo-mobile">
-          <img
-            src="./img/nelson-logo-375px.png"
-            alt="nelson logo for desktop devices"
-          />
-          <span>Nelson Gonzalez</span>
-        </div>
-        <div class="logo-desktop">
-          <img
-            src="./img/nelson-logo-768px.png"
-            alt="nelson logo for desktop devices"
-          />
-        </div>
-        <ul class="navbar">
-          <li><a href="#practicas">Practicas</a></li>
-          <li><a href="#ejercicios">Ejercicios en Clase</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pages</a></li>
-        </ul>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <main class="main">
-      <section class="hero">
-        <span class="hero-title container">
-          Nelson Gonzalez Frontend Developer Based in Costa Rica
-        </span>
-        <img
-          src="https://i.postimg.cc/0NC8b84F/1-Nelson-1.jpg"
-          alt="nelson Portfolio picture"
-        />
-      </section>
-
-      <!-- PRACTICAS -->
-      <section id="practicas" class="secondary-bg">
-        <p>Practicas</p>
-        <h2>Práctica No. 1</h2>
-        <div class="flex-wrapper container">
-          <div class="card">
-            <img src="./img/transformers.png" alt="Proyecto Transformers" />
-            <div class="text">
-              <span>Transformers</span>
-              <p>
-                Para esta práctica realizamos una pequeña lista de personajes,
-                basado en la serie de televisión de los años 80's llamada
-                "Transformers".
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./img/pluto-resized.png" alt="Proyecto Saturno" />
-            <div class="text">
-              <span>Saturno</span>
-              <p>
-                Esta práctica recolectamos información del sitio web
-                wikipedia.com sobre el planeta Saturno y alguna de las lunas que
-                orbitan el planeta.
-              </p>
-            </div>
-          </div>
-        </div>
-        <h2>Práctica No. 2</h2>
-        <div class="flex-wrapper container">
-          <div class="card">
-            <img src="./img/box-model.png" alt="Modelo de Caja" />
-            <div class="text">
-              <span>Modelo de Caja</span>
-              <p>
-                Durante la realización de este ejercicio, apliqué las
-                herramientas del modelo de caja vistas en clase en conbinació
-                con flexbox.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./img/flexobox.png" alt="Flexbox Layout" />
-            <div class="text">
-              <span>Flexbox Layout</span>
-              <p>
-                Al final de esta práctica, logré interiorizar los tres aspectos
-                más importantes del diseño web responsive: Diseño fluido, media
-                queries y flexible media.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ejercicios -->
-      <section id="ejercicios">
-        <p>Ejercicios en Clase</p>
-        <h2>Semana 3</h2>
-        <div class="flex-wrapper container">
-          <div class="card">
-            <img src="./img/formulario.png" alt="Ejercicio de Formularios" />
-            <div class="text">
-              <span>Formularios</span>
-              <p>
-                Aquí tuve dos objetivos principales: Primero entender las
-                características de los formularios en HTML y segundo cómo
-                dibujarlos en combinación con CSS.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./img/box-model.png" alt="Ejercicio Modelo de Caja" />
-            <div class="text">
-              <span>Modelo de Caja</span>
-              <p>
-                Esta es la base para lograr resolver el primer ejercicio
-                correspondiente a la segunda práctica que evaluava los
-                conocimientos sobre el modelo de caja y flexbox.
-              </p>
-            </div>
-          </div>
-        </div>
-        <h2>Semanas: 4, 5 y 6</h2>
-        <div class="flex-wrapper container">
-          <div class="card">
-            <img src="./img/under_construction.svg" alt="En construccion" />
-            <div class="text">
-              <span>En construcción</span>
-              <p>
-                Próximamente publicaré los nuevos ejercicios correspondientes a
-                las semanas 4, 5 y 6.
-              </p>
-            </div>
-          </div>
-          <!-- <div class="card">
-            <img src="./img/flexobox.png" alt="Flexbox Layout" />
-            <div class="text">
-              <span>Flexbox Layout</span>
-              <p>
-                Al final de esta práctica, logré interiorizar los tres aspectos
-                más importantes del diseño web responsive: Diseño fluido, media
-                queries y flexible media.
-              </p>
-            </div>
-          </div> -->
-        </div>
-      </section>
-    </main>
+    <h1>This is Frontendmentor</h1>
   </body>
 </html>

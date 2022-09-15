@@ -33,6 +33,10 @@ body {
   font-size: 1.5rem;
   background-color: var(--primaryBG);
 }
+/* GENERAL CSS */
+.center {
+  text-align: center;
+}
 /* main */
 section {
   width: 100%;
@@ -84,6 +88,20 @@ section {
 }
 .card-rating li:visited {
   background-color: var(--lightgrey);
+}
+.card-icon {
+  text-align: center;
+}
+.card-rating-message {
+  width: 180px;
+  height: 25px;
+  margin: 20px auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--alternateBG);
+  border-radius: 20px;
+  background-color: var(--tertiaryBG);
 }
 button {
   width: 100%;

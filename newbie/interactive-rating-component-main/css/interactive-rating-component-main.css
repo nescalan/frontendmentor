@@ -1,0 +1,94 @@
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --lightgrey: #959eac;
+  --medium-grey: #7c8798;
+
+  /* Background Colors */
+  --primaryBG: #121417;
+  --secondaryBG: #252b37;
+  --tertiaryBG: #2a333b;
+  --alternateBG: #fb7518;
+
+  /* Font Colors */
+  --primaryTextColor: #7c8798;
+  --secondaryTextColor: #eee;
+
+  /* Typograpy */
+  --overpass-ff: "Overpass", sans-serif;
+
+  /* Custom Colors */
+  --orange-cc: #fb7413;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--overpass-ff);
+  font-size: 1.5rem;
+  background-color: var(--primaryBG);
+}
+/* main */
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  width: 375px;
+  min-width: 375px;
+  padding: 20px;
+  color: var(--primaryTextColor);
+  border-radius: 30px;
+  background-color: var(--secondaryBG);
+}
+.card-star,
+.card-rating li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: var(--tertiaryBG);
+}
+.card-title {
+  margin-top: 20px;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card-text {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.card-rating ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--alternateBG);
+}
+/* Frontend Mentor Clases */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

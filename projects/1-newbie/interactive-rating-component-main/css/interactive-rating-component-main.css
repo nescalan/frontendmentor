@@ -16,6 +16,10 @@
   /* --primaryTextColor: #7c8798; */
   --secondaryTextColor: #eee;
 
+  /* Layout */
+  --mobile: 375px;
+  --desktop: 1440px;
+
   /* Typograpy */
   --overpass-ff: "Overpass", sans-serif;
 
@@ -35,11 +39,7 @@ body {
   font-size: 1.5rem;
   background-color: var(--primaryBG);
 }
-/* GENERAL CSS */
-.center {
-  text-align: center;
-}
-/* main */
+/* MAIN */
 main {
   width: 100%;
   height: 100vh;
@@ -49,9 +49,9 @@ main {
   flex-direction: column;
 }
 .card {
-  width: 410px;
-  /* height: 410px; */
   min-width: 375px;
+  max-width: 400px;
+  height: 428px;
   padding: 30px;
   color: var(--primaryTextColor);
   font-size: 1.3rem;
@@ -71,7 +71,7 @@ main {
 .card-title {
   margin-top: 37px;
   color: var(--white);
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 .card-text {
@@ -125,7 +125,7 @@ button {
   background-color: var(--alternateBG);
 }
 button:hover {
-  color: var(--white);
+  color: var(--alternateBG);
   background-color: var(--white);
 }
 /* Frontend Mentor Clases */

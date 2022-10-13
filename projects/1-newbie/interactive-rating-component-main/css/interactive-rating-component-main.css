@@ -39,6 +39,7 @@ body {
   font-size: 1.5rem;
   background-color: var(--primaryBG);
 }
+
 /* MAIN */
 main {
   width: 100%;
@@ -94,8 +95,9 @@ main {
   cursor: pointer;
   background-color: var(--alternateBG);
 }
-.card-rating li:visited {
-  background-color: var(--lightgrey);
+.visited {
+  color: var(--secondaryTextColor);
+  background-color: #7b8797 !important;
 }
 .card-icon {
   text-align: center;

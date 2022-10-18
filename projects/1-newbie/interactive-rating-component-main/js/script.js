@@ -17,7 +17,6 @@ const rating = (id) => {
       elementId3.classList.remove("visited");
       elementId4.classList.remove("visited");
       elementId5.classList.remove("visited");
-
       console.log(elementId1);
       break;
     case 2:
@@ -65,6 +64,10 @@ const rating = (id) => {
   console.log(messageOne);
 };
 
+const myRating = () => {
+  document.getElementById("raiting").innerHTML = "Hola todo bien";
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("li").forEach((element) => {
     let id = element.getAttribute("id");
@@ -73,4 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
       rating(id);
     });
   });
+  const btnSubmit = document.getElementById("btnSubmit");
+  btnSubmit.addEventListener("click", myRating());
 });

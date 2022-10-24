@@ -55,13 +55,13 @@ main .main-text {
   }
   p {
     margin-top: 20px;
+    margin-bottom: 16px;
     color: $text-gray;
     font-weight: 500;
     line-height: 26px;
   }
   button {
     margin-top: 24px;
-
     @include main-button;
     background-image: $primary-gradient;
   }

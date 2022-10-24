@@ -61,6 +61,7 @@ main .main-text h1 {
 }
 main .main-text p {
   margin-top: 20px;
+  margin-bottom: 16px;
   color: #83869a;
   font-weight: 500;
   line-height: 26px;

@@ -1,1 +1,45 @@
-/*# sourceMappingURL=global.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  min-width: 375px;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 80%;
+  }
+}
+header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header button {
+  width: 140px;
+  height: 48px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #13183f;
+}/*# sourceMappingURL=global.css.map */

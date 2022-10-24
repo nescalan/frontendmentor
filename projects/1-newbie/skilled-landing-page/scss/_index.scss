@@ -39,14 +39,30 @@ header {
   align-items: center;
 
   button {
-    width: 140px;
-    height: 48px;
-    border: none;
-    border-radius: 30px;
-    color: white;
-    font-family: $plus-jakarta-sans;
-    font-size: 1.6rem;
-    font-weight: 700;
+    @include main-button;
     background-color: $blue;
+  }
+}
+
+// CSS: Section main-text
+main .main-text {
+  margin-top: 15px;
+  h1 {
+    color: $blue;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 50px;
+  }
+  p {
+    margin-top: 20px;
+    color: $text-gray;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  button {
+    margin-top: 24px;
+
+    @include main-button;
+    background-image: $primary-gradient;
   }
 }

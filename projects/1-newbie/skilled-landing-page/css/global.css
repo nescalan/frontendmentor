@@ -48,4 +48,32 @@ header button {
   font-size: 1.6rem;
   font-weight: 700;
   background-color: #13183f;
+}
+
+main .main-text {
+  margin-top: 15px;
+}
+main .main-text h1 {
+  color: #13183f;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 50px;
+}
+main .main-text p {
+  margin-top: 20px;
+  color: #83869a;
+  font-weight: 500;
+  line-height: 26px;
+}
+main .main-text button {
+  margin-top: 24px;
+  width: 140px;
+  height: 48px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-image: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
 }/*# sourceMappingURL=global.css.map */

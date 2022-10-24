@@ -15,13 +15,18 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
+@media (min-width: 575px) {
+  .container {
+    max-width: 90%;
+  }
+}
 @media (min-width: 992px) {
   .container {
     max-width: 80%;

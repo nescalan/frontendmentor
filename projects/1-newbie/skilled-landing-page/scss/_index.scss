@@ -85,8 +85,12 @@ main .intro-tablet {
   main .intro-tablet {
     margin-top: 50px;
     display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
     .intro-tablet-text {
-      width: 60%;
+      width: 55%;
+      margin-left: 30px;
+      border: 1px solid green;
       h1 {
         color: $blue;
         font-weight: 800;
@@ -107,19 +111,16 @@ main .intro-tablet {
       }
     }
     .intro-tablet-image {
-      height: 5vh;
-      border: 1px solid red;
+      width: 45%;
+      position: absolute;
+      top: -50px;
+      right: -50px;
       figure.intro-img {
-        position: absolute;
-        top: -125px;
-        right: 0px;
-        width: 50%;
         height: 100vh;
         background-image: url(../images/image-hero-tablet.webp);
         background-repeat: no-repeat;
-        border: 1px solid green;
-
-        // background-size: 100% 100%;
+        background-size: cover;
+        border: 1px solid blue;
       }
     }
   }

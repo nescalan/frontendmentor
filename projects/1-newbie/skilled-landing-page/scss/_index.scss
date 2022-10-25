@@ -45,7 +45,7 @@ header {
 }
 
 // CSS: Section main-text
-main .main-text {
+main .intro-mobile {
   margin-top: 15px;
   h1 {
     color: $blue;
@@ -64,5 +64,63 @@ main .main-text {
     margin-top: 24px;
     @include main-button;
     background-image: $primary-gradient;
+  }
+  figure.intro-img {
+    height: 386px;
+    width: 100%;
+    margin: auto;
+    background-image: url(../images/image-hero-mobile.webp);
+    background-position: center;
+    background-size: 435px 409px;
+    background-repeat: no-repeat;
+  }
+}
+main .intro-tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  main .intro-mobile {
+    display: none;
+  }
+  main .intro-tablet {
+    margin-top: 50px;
+    display: flex;
+    .intro-tablet-text {
+      width: 60%;
+      h1 {
+        color: $blue;
+        font-weight: 800;
+        font-size: 2.9rem;
+        line-height: 1.3;
+      }
+      p {
+        margin-top: 20px;
+        color: $text-gray;
+        font-weight: 500;
+        font-size: 1.45rem;
+        line-height: 1.5;
+      }
+      button {
+        margin-top: 15px;
+        @include main-button;
+        background-image: $primary-gradient;
+      }
+    }
+    .intro-tablet-image {
+      height: 5vh;
+      border: 1px solid red;
+      figure.intro-img {
+        position: absolute;
+        top: -125px;
+        right: 0px;
+        width: 50%;
+        height: 100vh;
+        background-image: url(../images/image-hero-tablet.webp);
+        background-repeat: no-repeat;
+        border: 1px solid green;
+
+        // background-size: 100% 100%;
+      }
+    }
   }
 }

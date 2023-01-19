@@ -54,6 +54,12 @@ body {
   font-weight: 600;
   font-size: 22px;
 }
+.card-img img:hover,
+.card-content h1:hover,
+.card-footer span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
 .card-content p {
   font-weight: 300;
   line-height: 1.4;
@@ -90,6 +96,7 @@ body {
   color: var(--white);
 }
 
+/* ************************************ */
 .attribution {
   font-size: 11px;
   text-align: center;

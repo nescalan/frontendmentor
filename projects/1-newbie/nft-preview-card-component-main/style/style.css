@@ -41,7 +41,8 @@ body {
 }
 .card-img img,
 .card-content h1,
-.card-content p {
+.card-content p,
+.card-info {
   margin-bottom: 20px;
 }
 .card-img img {
@@ -62,12 +63,28 @@ body {
   padding-bottom: 20px;
   justify-content: space-between;
   border-bottom: 1px solid var(--very-dark-blue-line);
-  border: 1px solid red;
 }
 .card-info-left {
   color: var(--cyan);
-  border: 1px solid green;
 }
-.card-info-right {
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+.card-footer img {
+  width: 12%;
+  margin-right: 15px;
   border: 1px solid white;
+  border-radius: 50%;
+}
+.card-footer span {
+  color: var(--white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
